@@ -1,4 +1,3 @@
-from sqlite3 import connect
 import telnetlib
 import os
 import subprocess
