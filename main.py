@@ -1,7 +1,7 @@
 from sourceBridge import SourceBridge
 SourceBridge = SourceBridge()
 
-if SourceBridge.compatibleGameRunning:
+if SourceBridge.isConnected:
     while True:
         try:
             command = input("> ")

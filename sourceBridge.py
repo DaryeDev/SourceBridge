@@ -7,14 +7,14 @@ import psutil
 class SourceBridge():
 
     tn = gameExe = gameDir = gameName = modDir = None
-    compatibleGameRunning = False
+    isConnected = False
 
     def connect(self):
         if self.tn == None:
             print("Trying to connect to game...")
             try:
                 self.tn = telnetlib.Telnet("127.0.0.1", "2121")
-                self.compatibleGameRunning = True
+                self.isConnected = True
                 print("Connected to compatible Source game! (NetCon)")
                 return True
             except:
@@ -28,21 +28,21 @@ class SourceBridge():
                             self.gameDir = os.path.dirname(self.gameExe)
                             self.gameName = os.path.basename(self.gameDir)
                             self.modDir = os.path.join(self.gameDir, modDirs[self.gameName])
-                            self.compatibleGameRunning = True
+                            self.isConnected = True
                             print("Connected to "+self.gameName+"! (Hijack)")
                             return True
                 except:
                     pass
-                if not self.compatibleGameRunning:
+                if not self.isConnected:
                     print("Could not connect to compatible Source Game :(")
                     return False
         else:
-            return self.compatibleGameRunning
+            return self.isConnected
 
     def run(self, command):
         if self.tn == None:
             self.connect()
-        if self.compatibleGameRunning:
+        if self.isConnected:
             if self.tn:
                 self.tn.write((str(command) + "\n").encode('utf-8'))
             else:
