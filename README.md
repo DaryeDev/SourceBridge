@@ -28,4 +28,4 @@ Adding it to your launch arguments will make connecting to the Game and sending 
 
 ## Kudos
 
-Kudos to PortalRunner for letting me know about the NetCon Method.
+Kudos to PortalRunner for letting me know about the NetCon Method, and [@maxdup](https://github.com/maxdup) for [ValveEXE](https://github.com/pySourceSDK/ValveEXE), inspiration and base for the Hijack Method. 
