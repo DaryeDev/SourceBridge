@@ -1,6 +1,6 @@
 # SourceBridge
 
-Little util to connect to your Source Game Developer Console from Python.
+Little util to connect to your Source Game Developer Console to Python.
 
 ## Setup
 
