@@ -53,9 +53,6 @@ class SourceBridge():
                     subprocess.CREATE_NEW_PROCESS_GROUP)
                 time.sleep(1)
             
-            if command == "exit":
-                os._exit(0)
-            
             return True
         else:
             raise Exception("Compatible Source Game not Connected.")
