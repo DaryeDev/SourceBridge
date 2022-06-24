@@ -1,7 +1,9 @@
-import sourceBridge
+from sourceBridge import SourceBridge
+SourceBridge = SourceBridge()
 
-while True:
-    try:
-        sourceBridge.run(input("> "))
-    except Exception as e:
-        print(e)
+if SourceBridge.compatibleGameRunning:
+    while True:
+        try:
+            SourceBridge.run(input("> "))
+        except Exception as e:
+            print(e)

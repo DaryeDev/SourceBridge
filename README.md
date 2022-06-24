@@ -1,20 +1,31 @@
 # SourceBridge
-Little util to connect to your Source Game Developer Console from Python. 
+
+Little util to connect to your Source Game Developer Console from Python.
 
 ## Setup
-Download this repo and import sourceBridge, then call `sourceBridge.run(command)`, being `command` the command to execute on your Source Game Developer Console. 
 
-Easy to use.
+Check out the example on `main.py`.
 
 ### NetCon
-Gamewise, some games can be launched with the launch argument `-netconport 2121`. 
+
+Gamewise, some games can be launched with the launch argument `-netconport 2121`.
 
 Adding it to your launch arguments will make connecting to the Game and sending commands much faster.
 
 #### Games known to be working with NetCon
- - Portal 2
- - Left for Dead 2
- 
+
+- Portal 2
+- Left for Dead 2
+- Counter-Strike Global Offensive
+
 #### Games known to not be working with NetCon
- - Team Fortress 2
- - Garry's Mod
+
+- Team Fortress 2
+- Portal (1)
+- Half-Life 2
+- Counter-Strike Source
+- Garry's Mod
+
+## Kudos
+
+Kudos to PortalRunner for letting me know about the NetCon Method.
