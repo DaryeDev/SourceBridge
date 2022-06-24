@@ -4,6 +4,8 @@ Little util to connect to your Source Game Developer Console to Python.
 
 ## Setup
 
+Install `psutils` with pip: `pip install psutils`
+
 Check out the example on `main.py`.
 
 ### NetCon
