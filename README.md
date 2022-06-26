@@ -28,6 +28,8 @@ Adding it to your launch arguments will make connecting to the Game and sending 
 - Counter-Strike Source
 - Garry's Mod
 
+#### All games tested work with the Hijack Method
+
 ## Kudos
 
 Kudos to PortalRunner for letting me know about the NetCon Method, and [@maxdup](https://github.com/maxdup) for [ValveEXE](https://github.com/pySourceSDK/ValveEXE), inspiration and base for the Hijack Method. 
