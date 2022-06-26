@@ -8,19 +8,33 @@ Install `psutils` with pip: `pip install psutils`
 
 Check out the example on `main.py`.
 
+## How does it connect?
+
+SourceBridge uses 2 methods to connect to your game: Hijack and NetCon
+
+### Hijack
+
+The Hijack method works with all tested games, but it is slower connecting to the game and sending the commands (Although not that noticeable).
+
+#### Compatible Games
+
+ - All (All tested, that is.)
+
+#### Incompatible Games
+
+ - None (None that were tested.)
+
 ### NetCon
 
-Gamewise, some games can be launched with the launch argument `-netconport 2121`.
+The NetCon method is faster connecting to SourceBridge, and faster sending the commands; but it's only compatible with a few games, and the game must be launched with the launch argument `-netconport 2121`.
 
-Adding it to your launch arguments will make connecting to the Game and sending commands much faster.
-
-#### Games known to be working with NetCon
+#### Compatible Games
 
 - Portal 2
 - Left for Dead 2
 - Counter-Strike Global Offensive
 
-#### Games known to not be working with NetCon
+#### Incompatible Games
 
 - Team Fortress 2
 - Portal (1)
@@ -28,7 +42,6 @@ Adding it to your launch arguments will make connecting to the Game and sending 
 - Counter-Strike Source
 - Garry's Mod
 
-#### All games tested work with the Hijack Method
 
 ## Kudos
 
